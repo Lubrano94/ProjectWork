@@ -4,8 +4,8 @@
     --secondary-color: #1b5e20;  /* Verde Scuro per hover e accenti */
     --accent-color: #81c784;     /* Verde Chiaro per elementi decorativi */
     --text-color: #333333;       /* Grigio scuro per la leggibilità */
-    --bg-light: #f4f7f4;         /* Sfondo grigio chiarissimo/verde */
-    --white: #ffffff;
+    --bg-light: #f5f251 ;         /* Sfondo grigio chiarissimo/verde */
+    --white: #f7faf7;
     --transition: all 0.3s ease;
 }
 
@@ -23,9 +23,16 @@ body {
 }
 
 /* --- HEADER E HERO --- */
+.header_img {
+  background-image: url("File/header_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1600') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -41,10 +48,14 @@ header {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-bottom: 2px solid var(--accent-color);
 }
 
+.company-logo{
+    height: 80px;
+    width: 80px;
+}
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 15px;
@@ -54,13 +65,21 @@ header {
 .hero p {
     font-size: 1.2rem;
     font-weight: 300;
+    color: white;
 }
 
 /* --- SEZIONE ATTIVITÀ (GRID) --- */
-#attivita {
+#activities {
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#presentation {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
 }
 
 h2 {
@@ -84,6 +103,12 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+}
+
+.copyright{
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
 }
 
 .card {
@@ -111,7 +136,7 @@ h2::after {
 .download-box {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
     margin-top: 40px;
 }
@@ -152,7 +177,7 @@ h2::after {
 
 /* --- FOOTER --- */
 footer {
-    padding: 40px 20px;
+    padding: 10px 5px;
     background: #222;
     color: #bbb;
     text-align: center;
