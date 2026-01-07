@@ -2,7 +2,8 @@
 :root {
     --primary-color: #2e7d32;    
     --accent-color: #81c784;     
-    --text-color: #333333;       
+    --text-color: #333333; 
+    --external-link-color: #009e00;      
     --bg-light: #dcf5b4 ;         
     --white: #f7faf7;
     --transition: all 0.3s ease;
@@ -47,6 +48,10 @@ section {
     border-top: 10px;
     
     
+}
+
+.external-link{
+    color: var(--external-link-color);      
 }
 
 /* style header e i suoi componenti */
